@@ -1,0 +1,22 @@
+{
+  "name": "damn-middleware",
+  "version": "0.0.3",
+  "description": "express-4-middleware-collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damncreative/damn-middleware.git"
+  },
+  "author": "damn creative",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damncreative/damn-middleware/issues"
+  },
+  "homepage": "https://github.com/damncreative/damn-middleware",
+  "dependencies": {
+    "coffee-script": "^1.7.1"
+  }
+}
