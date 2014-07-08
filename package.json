@@ -1,6 +1,6 @@
 {
   "name": "damn-middleware",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "express-4-middleware-collection",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/damncreative/damn-middleware",
   "dependencies": {
     "coffee-script": "^1.7.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "should": "^4.0.4"
   }
 }

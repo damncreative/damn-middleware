@@ -8,8 +8,9 @@ exports.breadcrumbs = (req, res, next)->
     if segment.length > 0
       crumb = {}
       crumb.href = '/'+segments.slice(1, index+1).join('/')
-      crumb.title = res.__(segment)
+      if res.__?
+        crumb.title = res.__(segment)
+      else
+        crumb.title = segment
       res.locals.breadcrumb.push(crumb)
-
-  console.log res.locals.breadcrumb
   next()
