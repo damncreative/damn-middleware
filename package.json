@@ -1,26 +1,36 @@
 {
   "name": "damn-middleware",
   "version": "0.0.4",
-  "description": "express-4-middleware-collection",
-  "main": "index.js",
+  "description": "damnjs middleware library",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha test"
   },
+  "engines": {
+    "node": ">=4.2.1"
+  },
+  "author": "damn creative <info@damncreative.de>",
+  "liecnse": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/damncreative/damn-middleware.git"
-  },
-  "author": "damn creative",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/damncreative/damn-middleware/issues"
+    "url": "git@github.com:damncreative/damn-middleware.git"
   },
   "homepage": "https://github.com/damncreative/damn-middleware",
-  "dependencies": {
-    "coffee-script": "^1.7.1"
-  },
+  "bugs": "https://github.com/damncreative/damn-middleware/issues",
+  "keywords": [
+    "damn",
+    "middleware"
+  ],
   "devDependencies": {
-    "mocha": "^1.20.1",
-    "should": "^4.0.4"
+    "istanbul": "0.4.3",
+    "mocha": "2.4.5",
+    "should": "8.3.0",
+    "supertest": "1.2.0"
+  },
+  "dependencies": {
+    "debug": "2.2.0",
+    "koa-compose": "2.14.0",
+    "lodash": "4.9.0"
   }
 }

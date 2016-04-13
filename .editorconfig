@@ -1,0 +1,28 @@
+# http://editorconfig.org
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Set default charset
+[*]
+charset = utf-8
+
+# Indentation override for all
+[*]
+indent_style = space
+indent_size = 4
+
+# trim trailing for all
+[*]
+trim_trailing_whitespace = true
+
+# except .json
+[*.json]
+indent_size = 2
+
+# except .md
+[*.md]
+trim_trailing_whitespace = false

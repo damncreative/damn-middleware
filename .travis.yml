@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - "4.2"
+  - "4.3"
+  - "4.4"
+  - "5.5"
+  - "5.6"
+  - "5.7"
+  - "5.8"
+  - "5.9"
+  - "5.10"
+
+env:
+  - NODE_ENV=test
+
+before_script:
+  - npm i -g coveralls
+  - npm i -g codacy-coverage
+
+script: npm run test-cov
+
+after_script:
+  - cat ./coverage/lcov.info | coveralls
+  - cat ./coverage/lcov.info | codacy-coverage
