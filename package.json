@@ -1,6 +1,6 @@
 {
   "name": "damn-middleware",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "damnjs middleware library",
   "main": "lib/index.js",
   "scripts": {
